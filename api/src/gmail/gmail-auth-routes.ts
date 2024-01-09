@@ -21,8 +21,8 @@ gmailAuthRoutes.get("/gmailAuth", async (c) => {
     }
 
     return c.text("Authenticated");
-  } catch (e) {
-    return c.json({ error: e });
+  } catch (error) {
+    return c.json({ error });
   }
 });
 
@@ -40,7 +40,7 @@ gmailAuthRoutes.get("/oauth2Callback", async (c) => {
     console.log("Successfully authorized");
 
     return c.text("Successfully authorized");
-  } catch (e) {
-    return c.json({ error: e });
+  } catch (error) {
+    return c.json({ error });
   }
 });

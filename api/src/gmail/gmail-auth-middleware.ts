@@ -1,4 +1,4 @@
-import { Context, Env, MiddlewareHandler, Next } from "hono";
+import { Context, Env, Next } from "hono";
 import { authorize } from "./gmail-client";
 
 export const gmailAuthMiddleware = async (
