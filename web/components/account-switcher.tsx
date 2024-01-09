@@ -36,7 +36,7 @@ export default function AccountSwitcher({ accounts }: AccountSwitcherProps) {
           {accounts.map(({ icon, email }) => (
             <SelectItem key={email} value={email}>
               <div className="flex items-center gap-3 [&_svg]:h-4 [&_svg]:w-4 [&_svg]:shrink-0 [&_svg]:text-foreground">
-                {icon}
+                {icon()}
                 {email}
               </div>
             </SelectItem>
